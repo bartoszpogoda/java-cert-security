@@ -1,0 +1,11 @@
+keystore "kim.keystore";
+
+grant SignedBy "terry" {
+  permission java.util.PropertyPermission "user.dir", "read";
+  permission java.security.AllPermission;
+};
+
+grant SignedBy "chris" {
+  permission com.github.bartoszpogoda.learning.CryptographyProviderPermission "Crypto";
+};
+
